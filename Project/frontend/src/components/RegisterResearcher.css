@@ -1,0 +1,123 @@
+/* Full Page Centering */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+}
+
+/* Registration Box */
+.register-box {
+    background: #d1d5db;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Logo */
+.logo1 {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.nav-button {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #153070;
+}
+
+/* Title */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-bottom: 1rem;
+}
+
+/* Form */
+/*.registration-form {
+    display: flex;
+    flex-direction: column;
+}*/
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    /* Adds space between form fields */
+}
+
+/* Container for each row */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12.7px;
+    /* Half-inch space between two input fields */
+    /*margin-bottom: 15px;
+    /* Space between each row */
+}
+
+/* Styling for input fields */
+.form-row input {
+    width: 100%;
+    /* Ensures input boxes are evenly distributed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Two fields per row */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}
+
+/* Each input takes 48% to fit two in one row */
+.form-row input,
+.form-row select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Full-width input for fields like File Upload */
+.full-width {
+    width: 100%;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background-color: #1E3A8A;
+}

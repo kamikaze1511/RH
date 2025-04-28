@@ -1,0 +1,45 @@
+.hero {
+        background: url('../Assets/background.jpg') no-repeat center center/cover;
+            /* Ensure the background covers the section */
+            height: 670px;
+            /* Make it full screen */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            color: white;
+            /* Ensure text is visible */
+            padding: 4rem 2rem;
+            position: relative;
+            padding-left: 5%;
+}
+
+
+
+.hero-content {
+    position: relative;
+        z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #163172;
+    /* Navy Blue */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #163172;
+    margin: 1rem 0;
+}
+
+.member-count {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #22D3EE;
+    /* Cyan to match your theme */
+    margin-top: 1rem;
+}

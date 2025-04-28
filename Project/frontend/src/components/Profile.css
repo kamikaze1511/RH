@@ -1,0 +1,105 @@
+/* Profile Page Styling */
+.profile-page {
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Profile Navbar */
+.profile-navbar {
+    background-color: #1E3A8A;
+    /* Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 65px;
+}
+
+/* 🔹 Profile Info */
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+/* 🔹 Profile Picture (Increased Size) */
+.profile-pic {
+    width: 60px;
+    /* Increased width */
+    height: 60px;
+    /* Increased height */
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid white;
+    /* Thicker border for better visibility */
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 🔹 Navbar Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    top: -3px;
+    /* Moves buttons slightly up */
+}
+
+/* Buttons */
+.nav-btn {
+    background-color: red;
+    /* Cyan */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /* Increased size */
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    /* Bigger font */
+    font-weight: bold;
+    /* Bolder text */
+    transition: 0.3s;
+}
+
+.logout-btn {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    opacity: 0.8;
+}
+
+/* 🔹 Profile Content */
+.profile-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 🔹 Bigger Profile Picture on Profile Page */
+.profile-content .profile-pic {
+    width: 120px;
+    /* Bigger profile picture */
+    height: 120px;
+    border: 4px solid #1E3A8A;
+    /* Deep Blue border */
+    margin-bottom: 15px;
+}
+
+.profile-content h2 {
+    color: #1E3A8A;
+    /* Deep Blue */
+}
+
+.profile-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}

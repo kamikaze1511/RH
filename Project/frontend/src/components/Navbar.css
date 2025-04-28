@@ -1,0 +1,128 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #002366;
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-image {
+    width: 90px;
+    height: 50px;
+    margin-right: 10px;
+    
+}
+
+.nav-center .nav-links,
+.nav-right .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    position: relative;
+    list-style: none;
+}
+
+.nav-links a,
+.register-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.register-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu,
+.register-button:focus+.dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    color: #002366;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+/* Login Button */
+.login-button {
+    background-color: red;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #cc0000;
+}
+
+/* Register Button */
+.register-button {
+    background-color: red;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #cc0000;
+}

@@ -1,0 +1,95 @@
+/* Container for the entire form section */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    /* Light gray background */
+    padding: 1rem;
+}
+
+/* Styling for the form box */
+.register-box {
+    background-color: #d1d5db;
+    /* White background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    width: 100%;
+    max-width: 500px;
+    /* Limits the width on larger screens */
+}
+
+/* Centering the logo */
+.logo1 {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 120px;
+    /* Adjust size as needed */
+}
+
+/* Styling for the title */
+.title {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #1E3A8A;;
+    /* Darker shade for text */
+    margin-bottom: 1.5rem;
+}
+
+/* Form layout */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each form group (label + input) */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Styling for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    /* Dark gray for labels */
+    font-weight: 500;
+}
+
+/* Styling for inputs */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    /* Light gray border */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #2d3748;
+    /* Dark gray text */
+    background-color: #edf2f7;
+    /* Slightly off-white background */
+}
+
+/* Styling for the submit button */
+.submit-button {
+    background-color: #3182ce;
+    /* Blue background */
+    color: #ffffff;
+    /* White text */
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+    background-color: #2b6cb0;
+    /* Darker blue */
+}
