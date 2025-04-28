@@ -6,7 +6,7 @@ const Student = require('../models/Student');
 const Researcher = require('../models/Researcher');
 const { hashPassword } = require('../utils/auth');
 const upload = require('../utils/upload');
-const { sendEmailOTP, sendPhoneOTP, verifyOTP } = require("../utils/otpService");
+
 
 // Student Registration (with file uploads)
 router.post('/register-student', upload.fields([{ name: 'resume', maxCount: 1 }, { name: 'photo', maxCount: 1 }]), async (req, res) => {
@@ -124,37 +124,7 @@ router.post("/login", async (req, res) => {
     }
 });
 
-// Send OTP to email
-router.post("/send-email-otp", async (req, res) => {
-  const { email } = req.body;
-  try {
-    await sendEmailOTP(email);
-    res.json({ message: "OTP sent to email" });
-  } catch (error) {
-    res.status(500).json({ error: "Failed to send OTP" });
-  }
-});
 
-// Send OTP to phone
-router.post("/send-phone-otp", async (req, res) => {
-  const { phone } = req.body;
-  try {
-    await sendPhoneOTP(phone);
-    res.json({ message: "OTP sent to phone" });
-  } catch (error) {
-    res.status(500).json({ error: "Failed to send OTP" });
-  }
-});
-
-// Verify OTP
-router.post("/verify-otp", (req, res) => {
-  const { identifier, otp } = req.body; // identifier can be email or phone
-  if (verifyOTP(identifier, otp)) {
-    res.json({ message: "OTP verified successfully" });
-  } else {
-    res.status(400).json({ error: "Invalid OTP" });
-  }
-});
 
 
 module.exports = router;
